@@ -1,0 +1,123 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  background-color: #0038a8;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.jumbotron {
+  color: white;
+  background-image: linear-gradient(45deg, #0038a8, black);
+}
+
+.navB {
+  background: rgba(76, 175, 80, 0);
+}
+
+.fillBox {
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  width: 300px;
+  height: 420px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transition: 0.7s;
+  opacity: 0;
+}
+.content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 170px;
+  display: flex;
+  padding: 0 10px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: 'Poppins', sans-serif;
+  transform: translateY(200px);
+  transition: 0.3s;
+}
+.name {
+  position: relative;
+  padding: 3px 0;
+}
+.name::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.4s;
+  transition-delay: 0.5s;
+}
+.content p {
+  font-size: 13px;
+}
+.overlay a {
+  display: block;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
+.card:hover .overlay {
+  opacity: 1;
+}
+.card:hover .content {
+  transform: translateY(0);
+}
+.card:hover .name::after {
+  width: 100%;
+}
+
+.email-link {
+  display: inline;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  border: 2px solid #fff;
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  font-size: 18px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 2px solid #fff;
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}

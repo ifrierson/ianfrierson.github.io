@@ -1,0 +1,105 @@
+.section-contact {
+    padding: 5rem 0 10px 0;
+    background-color:#F6F6F6;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+    &__contact-title {
+        margin-top: 5rem;
+        font-size: xx-large;
+    }
+
+    &__form{
+        background-color: white;
+        margin: 2rem auto;
+        width: 60%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        @media (max-width: $phone) {
+            margin: unset;
+            width: unset;
+        }
+    }
+
+    // &__form-field{
+
+    // }
+
+    &__form-group{
+        width: 50%;
+        margin: 20px auto;
+        font-size: 20px;
+        text-align: left;
+        @media (max-width: $phone) {
+            width: 100%;
+        }
+
+        & textarea,
+        & input{
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+        border: 1px solid;
+        font-family: Segoe UI;
+        }
+        & textarea{
+            resize: none;
+        }
+    }
+    
+    
+    
+    &__form-button{
+        width: 50%;
+        border: none;
+        outline: none;
+        padding: 20px;
+        font-size: 24px;
+        border-radius: 8px;
+        font-family: 'Montserrat';
+        color: rgb(27, 166, 247);
+        text-align: center;
+        cursor: pointer;
+        margin-top: 10px;
+
+        &:hover{
+            background-color: rgb(214, 226, 236);
+        }
+    }
+
+    &__social-media {
+        width: auto;
+        margin: 25px auto;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    &__social-media-icon {
+        margin: 5px;
+        font-size: 75px;
+        text-decoration: none;
+        color: black;
+        @media (max-width: $phone) {
+            font-size: 5rem;
+        }
+    }
+    
+    &__social-media-title{
+        font-size: xx-large;
+        margin: 10px auto;
+        @media (max-width: $phone) {
+        }
+    }
+    
+
+
+}
+
+
+
+
+
+
+
